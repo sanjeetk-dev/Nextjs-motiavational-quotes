@@ -1,3 +1,6 @@
+"use client"
+
+
 import { useState } from 'react';
 import MotivationalSloth from 'motivational-sloth';
 import QuoteCard from '../components/QuoteCard';
