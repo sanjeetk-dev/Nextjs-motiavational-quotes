@@ -20,6 +20,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Motivational Sloth</title>
+        <meta name="description" content="Get hilarious low-energy motivational quotes from the Motivational Sloth." />
+        <meta name="keywords" content="motivational quotes, funny quotes, sloth, relaxation, sanjeet ,funny ,quotes ," />
+        <meta name="author" content="Sanjeet Kumar" />
+        <meta property="og:title" content="Motivational Sloth" />
+        <meta property="og:description" content="Get hilarious low-energy motivational quotes from the Motivational Sloth." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
