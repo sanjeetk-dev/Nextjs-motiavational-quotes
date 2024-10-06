@@ -1,6 +1,6 @@
 const ThemeSelector = ({ themes, onSelectTheme }) => {
   return (
-    <div className="flex space-x-4 mt-4">
+    <div className="flex space-x-4 mt-4 flex-wrap ">
       {themes.map((theme) => (
         <button
           key={theme}

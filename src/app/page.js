@@ -13,7 +13,7 @@ export default function Home() {
   const quote = sloth.getQuote(selectedTheme);
 
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 transition duration-300`}>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 transition duration-300 overflow-hidden">
       <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Motivational Sloth</h1>
       <QuoteCard quote={quote} />
       <ThemeSelector themes={themes} onSelectTheme={setSelectedTheme} />
