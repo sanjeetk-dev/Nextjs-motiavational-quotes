@@ -6,14 +6,14 @@ export default function Home() {
   const sloth = new MotivationalSloth();
   const [selectedTheme, setSelectedTheme] = useState("");
   const [quote, setQuote] = useState("")
-  
+  const [themes, setThemes] = useState([])
   const handleClick = (e) => {
     setSelectedTheme(e);
     setQuote(sloth.getQuote(selectedTheme))
   }
   
   useEffect(()=>{
-    const themes = sloth.getThemes();
+    setThemes(sloth.getThemes());
     setSelectedTheme(themes[0])
     setQuote(sloth.getQuote(selectedTheme))
   },[])
