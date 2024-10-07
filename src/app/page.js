@@ -2,8 +2,6 @@
 import { useState, useEffect } from 'react';
 import MotivationalSloth from 'motivational-sloth';
 import QuoteCard from '../components/QuoteCard';
-import ThemeSelector from '../components/ThemeSelector';
-
 export default function Home() {
   const sloth = new MotivationalSloth();
   const [selectedTheme, setSelectedTheme] = useState("");
